@@ -1,0 +1,477 @@
+/*-----------header*/
+
+
+.header li{
+	margin-right: 20px;
+}
+
+.header-banner{
+        background-image: url(../img/comp.jpg);
+        background-position: center;
+	    background-size:cover;
+	    width:100%;
+	    height: 600px;
+	    position:relative;
+	    background-repeat: no-repeat;
+        background-attachment: fixed;}
+.overlay{
+	top:0;
+	left: 0;
+	width: 100%;
+	background-color:#223047;
+	height:100%;
+	position:absolute;
+	opacity:0.7;
+
+}
+
+/*-----------------search*/
+/*.input-group{
+	margin-top: 200px;
+}*/
+.text-center_search{
+  margin-top: 200px;
+}
+.text-center_search h1{
+  font-size: 30px;
+}
+.search-input {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  border-bottom: 4px solid #DAE2E7;
+  transition: all .4s;
+  font-weight: bold;
+  font-size: 25px;
+
+}
+
+.search-input:focus {
+  background: transparent;
+  box-shadow: none;
+  border-bottom: 4px solid #dc3545;
+}
+
+.search-button {
+  border-radius: 50%;
+  padding: 15px 21px;
+  transition: all .4s;
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+.search-button:hover {
+  background-color: #eee;
+  transform: translateY(-1px);
+}
+
+.search-style{
+	position: relative;
+}
+.search-background{
+	width:100%;
+	background-color:black;
+	height: 300px;
+	opacity:0.4;
+	position: absolute;
+	top:100px;
+}
+
+
+/*----------------------------Mail*/
+.Mail{
+	width: 100%;
+	height: 280px;
+	padding: 0;
+	/*background-color: #F0F0F0;*/
+	margin-bottom: 100px;
+	position: relative;
+
+}
+
+.Mail h2{
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 200px;
+	color: white;
+  font-size: 25px;
+
+}
+
+.Contact input{
+	background:none;
+	outline: none;
+	border:none;
+	border-bottom: 2px solid black;
+	width: 300px;
+	display: block;
+	margin: 0 auto;
+	padding-top: 42px;
+	font-weight:bold;
+
+}
+
+.arrive{
+	display: block;
+	position:absolute;
+	margin-left:73%;
+	margin-top: 28px;
+}
+
+/*--------------------------mission*/
+
+.mission {
+  background: #2A4666;
+}
+
+.underline {
+  width: 150px;
+  border: 3px solid #eee;
+  margin: auto;
+}
+
+/*.fromLeft {
+  animation-name: fromLeft;
+  animation-duration: 3s;
+}
+
+.fromRight {
+  animation-name: fromRight;
+  animation-duration: 3s;
+}*/
+
+@keyframes fromLeft {
+  0% {
+    transform: translateX(-120px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fromRight {
+  0% {
+    transform: translateX(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+/* end of mission */
+
+/* section7
+================================================== */
+
+.section07 {
+  background: #223047;
+  color: #fff; }
+
+.section07 h2 {
+    padding-top: 65px;
+    padding-bottom: 30px;
+    color: #fff;
+    font-family: "Lato", sans-serif;
+    font-size: 30px; }
+
+.section07 h4 {
+    padding-bottom: 30px;
+    color: #fff;
+    font-family: "Lato", sans-serif;
+    font-size: 20px; }
+
+.section07 .br-line {
+    margin-bottom: 20px; }
+
+.section07 .br-line .line-div {
+      border-bottom: 1px solid #fff;
+      width: 300px; }
+
+.section07 .br-line .circle-div {
+      color: #fff;
+      padding: 0 10px; }
+
+.section07 p {
+    padding-top: 30px;
+    padding-bottom: 80px;
+    width: 75%;
+    text-align: center;
+    color: #fff;
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+    line-height: 22px; }
+
+.section07-photo img {
+    margin-bottom: 25px;
+    margin-top: 10px;
+    object-fit: cover;
+  }
+
+.section07-photo {
+    text-align: center; }
+
+.section07 .section07-photo:last-child {
+    margin-right: 0; }
+
+.section07-display {
+  background: #1C3F64;
+  color: #fff; }
+
+.section07-display h4 {
+    padding-bottom: 40px;
+    color: #fff;
+    font-family: "Lato", sans-serif; }
+
+.section07-display .container{
+    padding-top:50px;
+    padding-bottom: 50px;
+  }
+
+
+/* Footer
+================================================== */
+.page_footer{
+    background: #0E1F31;
+    color: #fff;
+    padding: 40px 0;
+}
+.text-center{
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.social-icons{
+	padding-left: 0px;
+}
+.social_icon-link{
+	color: white;
+	font-size: 25px;
+
+}
+.social_icon-link:hover{
+    color: #dc3545;
+    text-decoration: none;
+}
+.scrollToTop{
+    color: #fff;
+}
+.scrollToTopButton{
+    cursor: pointer;
+    background: #fff;
+    color: #17181e;
+    border: 0;
+    outline: 0;
+    border-radius: 50%;
+    margin-left: 5px;
+    padding: 5px;
+}
+.scrollToTop:hover{
+    color: #ccc;
+    text-decoration: none;
+}
+.scrollToTop:hover .scrollToTopButton{
+    background: #dc3545;
+}
+.contact a{
+    color: white;
+    font-size:20px;
+}
+
+/*---------------------------------------------------------------inner-page*/
+
+.search-background_inner_page{
+  background-color: #294253;
+  opacity: 0.8;
+  padding:20px;
+}
+.search-background_inner_page .container{
+  box-shadow: 0 2px 2px rgba(0,0,0,0.15), 0 2px 5px rgba(0,0,0,0.15);
+}
+
+.text-search h1{
+  font-size: 30px;
+  color: #dc3545;
+  margin-top: 15px;
+}
+
+
+/*-------------------phone_number_details*/
+.phone_number_details{
+  width: 724px;
+  margin: 0 auto;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.phone_number_details{
+      box-shadow: 0 2px 2px rgba(0,0,0,0.15), 0 2px 5px rgba(0,0,0,0.15);
+      background-color: #fff;
+}
+
+.personal-phone{
+  padding:20px 0;
+  padding-left: 20px;
+  display: flex;
+}
+.subtext{
+  margin-left: 20px;
+  margin-right: 150px;
+}
+.subtext p {
+    color: #777;
+  }
+.btn.btn-outline.blue {
+    border: solid 1px #008299;
+    color: #008299;
+    background-color: transparent;
+    border-radius: 100px;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 1.4px;
+    height: 32px;
+    padding: 6px 14px;
+    }
+.personal_call .call-button{
+  padding-left: 20px;
+
+}
+  .personal_call .details-click{
+    margin-top: 20px;
+  }
+
+/*--------------------  full information*/
+#more {display: none;}
+.full_information{
+   width: 724px;
+  margin: 0 auto;
+  margin-top: 50px;
+  box-shadow: 0 2px 2px rgba(0,0,0,0.15), 0 2px 5px rgba(0,0,0,0.15);
+  background-color: #fff;
+}
+.personal-name, .personal-address, .personal-location{
+  padding:20px 0;
+  padding-left: 20px;
+}
+/*-----------------------similar_number_box*/
+
+.similar_number_box{
+  background-color: #E9E9E9;
+  margin-top: 50px;
+}
+.similar_number_box .container{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.similar_number_box ul{
+  padding-left: 0px;
+}
+.similar_number_box .line{
+  height:1px;
+  color:gray;
+}
+
+.view_more{
+  color: #AAA8A8;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.view_more-link{
+    color: white;
+    padding: 10px 25px;
+    border-radius: 20px;
+    margin-top: 10px;
+    border: 1px solid white;
+    transition: all .7s;
+    background-color: #425D6E;
+    margin-bottom: 50px;
+}
+.view_more-link:hover{
+    color: #dc3545; 
+    border: 1px solid #dc3545;
+}
+
+.view-more-button{
+    animation: slider-button-animate 1s;
+    
+}
+@keyframes view-more-button-animate {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px); }
+    80% {
+      opacity: .8;
+      transform: translateY(20px); }
+    100% {
+      opacity: 1;
+      transform: translateY(0); } 
+    }
+
+/*.loader{
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+
+#loader-2 span{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: #3498db;
+  margin: 35px 5px;
+}
+
+#loader-2 span:nth-child(1){
+  animation: bounce 1s ease-in-out infinite;
+}
+
+#loader-2 span:nth-child(2){
+  animation: bounce 1s ease-in-out 0.33s infinite;
+}
+
+#loader-2 span:nth-child(3){
+  animation: bounce 1s ease-in-out 0.66s infinite;
+}
+
+@keyframes bounce{
+  0%, 75%, 100%{
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  25%{
+    -webkit-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    -o-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+}*/
+/*----------------------------------table*/
+
+.table-data{
+  margin-top: 50px;
+  background-color: #2E6888;
+}
+hr.new1 {
+  height:1px ;
+  background-color:#882E36;
+}
+
+.similar-information{
+  padding: 30px 0px;
+}
+
+
+/*-------------table-box*/
+
+.table-box{
+  margin-top: 50px;
+}
