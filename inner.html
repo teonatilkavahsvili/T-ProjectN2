@@ -4,6 +4,7 @@
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" href="animate.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -22,7 +23,7 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                       <ul class="navbar-nav ml-auto">
                         <li class="nav-item actives">
-                          <a class="nav-link text-white" href="#">ABOUT <span class="sr-only">(current)</span></a>
+                          <a class="nav-link text-white" href="index.html">ABOUT <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link text-white" href="#">SERVICE</a>
@@ -52,7 +53,7 @@
               </nav>
           </div>
 
-			<div class="search-style">
+			<div class="search-style" style="margin-top:90px;">
 	          	      <div class="search-background_inner_page">
 				          <div class="container">
 				             <div class="row ">
@@ -75,14 +76,14 @@
               <div class="phone_number_details">
 		                  <div class="personal-phone">
 		                        <i class="fa fa-phone-square"style="font-size: 40px;"></i>
-			                   <div class="subtext">
+			                   <div class="subtext-num">
 			                        <h1>(209) 474-3438</h1>
 									<p>Registered in Oakland, CA</p>
 			                  </div>
 			                  <div class="personal_call">
 		                  	    <a id="call-btn" class="btn btn-outline blue pill slim" data-gaaction="call-phone" data-gaevent="phone" data-galabel="click" href="tel:+12094743438">Call</a>
 									<div class="details-click">
-										<a href="#">
+										<a href="#" class="numb-details">
 										PHONE NUMBER DETAILS 
 									    </a>
 									</div>
@@ -91,33 +92,9 @@
               </div>
     </section>
 		
-<!-- 	<section class="phone_number_details">
-		<div class="container" style="margin-top: 100px;">
-			<div class="row personal-phone">
-				    <div class="col-2"></div>
-					<div class="col-1">
-						<i class="fa fa-phone-square"style="font-size: 40px;"></i>
-					</div>
-					<div class="col-4 subtext">
-						<h1>(209) 474-3438</h1>
-						<p>Registered in Oakland, CA</p>
-					</div>
-					<div class="col-3">
-						<a id="call-btn" class="btn btn-outline blue pill slim" data-gaaction="call-phone" data-gaevent="phone" data-galabel="click" href="tel:+12094743438">Call</a>
-						<br>
-						<a href="">
-							PHONE NUMBER DETAILS 
-						</a>
 
-					</div>
-			</div>
-		</div>
-	</section> -->
-
-	<section>
-		<span id="dots">...</span><span
-		<span id="more">
-		<div class="full_information" style="margin-top: 100px;">
+	<section class="phone_number_details more" style="display: none">
+		<div class="full_information">
 			<div class="personal-name" style="display: flex;">
 							<i class="fa fa-user-circle"style="font-size: 40px;"></i>
 						<div class="" style="padding-left: 20px">
@@ -150,19 +127,17 @@
 						</div>
 			</div>
 		</div>
-		</span>
-		<div class=" view-more-button col-lg-12 d-flex justify-content-center">
-              <button onclick="myFunction()" id="myBtn" class="view_more-link">Load More</button> 
-        </div>
-        <!-- <div class="three col col-lg-12 d-flex justify-content-center">
-			        <div class="loader" id="loader-2">
-			        <a href="" onclick="myFunction()" id="myBtn" class="view_more-link">
-			          <span></span>
-			          <span></span>
-			          <span></span>
-			         </a>
-			        </div>
-        </div> -->
+  </section>
+  <section>
+    <div class=" view-more-button col-lg-12 d-flex justify-content-center">
+        <button class="w3-button w3-red view_more-link" id="load-more-btn">Load More</button>
+        <button class="w3-button w3-red view_more-link" id="load-less-btn" style="display: none">Load Less</button>
+    </div>
+    
+    <div class="w3-light-grey container" id="load-more-progress" style="display: none;">
+      <div class="w3-container w3-red w3-center bar" style="width:10%;">10%</div>
+    </div>
+
 	</section>
 
 
@@ -171,7 +146,7 @@
 			<h3 class="text-black mb-3">Similar Numbers</h3>
             <hr class="line">
 			<div class="row">
-				<div class="col-2">
+				<div class="col-lg-2 col-md-2 col-sm-4 col-6 ml-auto">
 					<ul>
 						<li>1-209-474-9989</li>
 						<li>1-209-474-9975</li>
@@ -179,7 +154,7 @@
 						<li>1-209-474-9947</li>
 					</ul>					
 				</div>
-				<div class="col-2">
+				<div class="col-lg-2 col-md-2 col-sm-4 col-6 ml-auto">
 					<ul>
 						<li>1-209-474-9989</li>
 						<li>1-209-474-9975</li>
@@ -187,7 +162,7 @@
 						<li>1-209-474-9947</li>
 					</ul>					
 				</div>
-				<div class="col-2">
+				<div class="col-lg-2 col-md-2 col-sm-4 col-6 ml-auto">
 					<ul>
 						<li>1-209-474-9989</li>
 						<li>1-209-474-9975</li>
@@ -195,7 +170,7 @@
 						<li>1-209-474-9947</li>
 					</ul>					
 				</div>
-				<div class="col-2">
+				<div class="col-lg-2 col-md-2 col-sm-4 col-6 ml-auto">
 					<ul>
 						<li>1-209-474-9989</li>
 						<li>1-209-474-9975</li>
@@ -203,7 +178,7 @@
 						<li>1-209-474-9947</li>
 					</ul>					
 				</div>
-				<div class="col-2">
+				<div class="col-lg-2 col-md-2 col-sm-4 col-6 ml-auto">
 					<ul>
 						<li>1-209-474-9989</li>
 						<li>1-209-474-9975</li>
@@ -211,7 +186,7 @@
 						<li>1-209-474-9947</li>
 					</ul>					
 				</div>
-				<div class="col-2">
+				<div class="col-lg-2 col-md-2 col-sm-4 col-6 ml-auto">
 					<ul>
 						<li>1-209-474-9989</li>
 						<li>1-209-474-9975</li>
@@ -232,66 +207,42 @@
         <div class="row mb-7">
           <div class="col-xl-12 col-lg-12 col-md-12 ml-auto">
             <div class="row align-items-center">
-              <div class="col-xl-12 col-12 mb-4 mb-xl-0">
+              <div class="col-xl-12 col-12 col-md-12 col-xs-12 mb-4 mb-xl-0">
                 <h3 class="text-white text-center mb-3">Staff Salary</h3>
                 <hr class="new1">
                 <table class="table table-striped bg-light text-center">
                   <thead>
                     <tr class="text-muted">
-                      <th>#</th>
                       <th>Name</th>
-                      <th>Salary</th>
-                      <th>Date</th>
-                      <th>Similar Number</th>
                       <th>Phone Number</th>
-                      <th>Contact</th>
+                      <th>Information</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <th>1</th>
                       <td>John</td>
-                      <td>$2000</td>
-                      <td>25/05/2018</td>
-                      <td>1-209-479-9989</td>
-                      <td>(209) 474-3438</td>
-                      <td><button type="button" class="btn btn-info btn-sm">Message</button></td>
+                      <td>(209) 474-3438-1256</td>
+                      <td><button type="button" class="btn btn-info btn-sm">Read More</button></td>
                     </tr>
                     <tr>
-                      <th>2</th>
                       <td>Ann</td>
-                      <td>$2000</td>
-                      <td>25/05/2018</td>
-                      <td>1-209-479-9989</td>
-                      <td>(209) 474-3438</td>
-                      <td><button type="button" class="btn btn-info btn-sm">Message</button></td>
+                      <td>(209) 474-3438-4576</td>
+                      <td><button type="button" class="btn btn-info btn-sm">Read More</button></td>
                     </tr>
                     <tr>
-                      <th>3</th>
                       <td>Mark</td>
-                      <td>$2000</td>
-                      <td>25/05/2018</td>
-                      <td>1-209-479-9989</td>
-                      <td>(209) 474-3438</td>
-                      <td><button type="button" class="btn btn-info btn-sm">Message</button></td>
+                      <td>(209) 474-3438-4589</td>
+                      <td><button type="button" class="btn btn-info btn-sm">Read More</button></td>
                     </tr>
                     <tr>
-                      <th>4</th>
                       <td>Mary</td>
-                      <td>$2000</td>
-                      <td>25/05/2018</td>
-                      <td>1-209-479-9989</td>
-                      <td>(209) 474-3438</td>
-                      <td><button type="button" class="btn btn-info btn-sm">Message</button></td>
+                      <td>(209) 474-3438-4321</td>
+                      <td><button type="button" class="btn btn-info btn-sm">Read More</button></td>
                     </tr>
                     <tr>
-                      <th>5</th>
                       <td>Bob</td>
-                      <td>$2000</td>
-                      <td>25/05/2018</td>
-                      <td>1-209-479-9989</td>
-                      <td>(209) 474-3438</td>
-                      <td><button type="button" class="btn btn-info btn-sm">Message</button></td>
+                      <td>(209) 474-3438-4587</td>
+                      <td><button type="button" class="btn btn-info btn-sm">Read More</button></td>
                     </tr>
                   </tbody>
                 </table>
@@ -364,7 +315,7 @@
                         Mark posted a new comment
                       </button>
                     </div>
-                    <div class="collapse" id="collapseTwo" data-parent="#accordion">
+                    <div class="collapse show" id="collapseTwo" data-parent="#accordion">
                       <div class="card-body">
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis earum modi delectus fugiat consectetur eaque harum obcaecati, saepe id vitae, dolore aliquam! Quos, doloribus quisquam.
                       </div>                      
@@ -377,7 +328,7 @@
                         Monica posted a new comment
                       </button>
                     </div>
-                    <div class="collapse" id="collapseThree" data-parent="#accordion">
+                    <div class="collapse show" id="collapseThree" data-parent="#accordion">
                       <div class="card-body">
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis earum modi delectus fugiat consectetur eaque harum obcaecati, saepe id vitae, dolore aliquam! Quos, doloribus quisquam.
                       </div>                      
@@ -390,7 +341,7 @@
                         Vivien posted a new comment
                       </button>
                     </div>
-                    <div class="collapse" id="collapseFour" data-parent="#accordion">
+                    <div class="collapse show" id="collapseFour" data-parent="#accordion">
                       <div class="card-body">
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis earum modi delectus fugiat consectetur eaque harum obcaecati, saepe id vitae, dolore aliquam! Quos, doloribus quisquam.
                       </div>                      
@@ -404,7 +355,25 @@
       </div>
     </section>
 
-
+    <section class="container CommentPost">
+              <div class="col-xl-12">
+                <div class="card rounded">
+                  <div class="card-body">
+                    <h5 class="text-muted text-center mb-4">Quick Status Post</h5>
+                    <form>
+                      <div class="form-group">
+                        <input type="text" class="form-control py-2 mb-3" placeholder="What's Your Name...">
+                        <input type="text" class="form-control py-2 mb-3" placeholder="What's Your Mail...">
+                        <div class="input-group">
+                          <textarea class="form-control" aria-label="With textarea" placeholder="What's Your Status..." style="margin-bottom: 15px; height: 150px;"></textarea>
+                        </div>
+                        <button type="button" class="btn btn-block text-uppercase font-weight-bold text-light bg-info py-2 mb-5" style="font-size: 1.1rem;line-height: 3;">Submit Post</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+    </section>
 
  <footer class="page_footer">
   <div class="container">
